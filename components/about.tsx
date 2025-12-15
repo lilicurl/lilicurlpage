@@ -21,17 +21,18 @@ export function About() {
           integrate, and adapt. Not by throwing everything away, 
           but by understanding what works and making it better.
         </p>
-        <p>  
+        <div>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>Connecting fragmented tools and teams into coherent ecosystems</li>
-
             <li>Automating processes to reduce cost and improve decision-making</li>
             <li>Bridging the gap between technical execution and strategic business needs</li>
           </ul>
-      I lead with empathy, code with purpose, and build with a deep 
-      understanding of both business and people. Whether working in large
-       organizations or early-stage startups, I bring clarity to complexity
-        </p>
+          <p>
+            I lead with empathy, code with purpose, and build with a deep
+            understanding of both business and people. Whether working in large
+            organizations or early-stage startups, I bring clarity a la complejidad
+          </p>
+        </div>
       </div>
     </section>
   )

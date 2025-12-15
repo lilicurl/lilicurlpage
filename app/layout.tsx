@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={cn(montserrat.variable, poppins.variable)}>
+    <html lang="es" className={cn(montserrat.variable, poppins.variable)} suppressHydrationWarning>
       <body className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 font-poppins">
         {children}
       </body>
