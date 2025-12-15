@@ -16,7 +16,12 @@ const poppins = Poppins({
 export const metadata = {
   title: 'Integration Lead & Strategic Technology Leader',
   description: 'El arte de mejorar tu negocio TI sin empezar de nuevo',
-    generator: 'v0.app'
+  generator: 'v0.app',
+  icons: {
+    icon: '/publicAttachment/logo.svg',
+    shortcut: '/publicAttachment/logo.svg',
+    apple: '/publicAttachment/logo.svg',
+  },
 }
 
 export default function RootLayout({
