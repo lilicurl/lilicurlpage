@@ -17,7 +17,7 @@ export function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/publicAttachment/logo.svg" alt="" aria-hidden={true} width={70} height={59} className="h-8 w-auto" />
+           <img src="/publicAttachment/logo.svg" alt="" aria-hidden="true" width={70} height={59} className="h-8 w-auto" />
           <span className="sr-only font-montserrat font-bold text-2xl">iNLi</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
