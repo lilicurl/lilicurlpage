@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# lilicurl.com
 
-## Getting Started
+Personal portfolio of **Liliana Castellanos** — Solution Architect and Software Engineer with 10+ years of experience building scalable systems across financial services, HR, and operations.
 
-First, run the development server:
+**Live:** [lilicurl.com](https://lilicurl.com)
+
+---
+
+## About
+
+I design and build integrated cloud solutions that align technology with business strategy. My background spans full product lifecycles: from architecture and backend engineering to team leadership and stakeholder alignment.
+
+Currently working as a Freelance Senior Product Engineer at ViaLabs, building banking reconciliation pipelines and AI-driven analytics tools.
+
+**Core areas:** Systems integration · Cloud (Azure, GCP) · AI implementation · Backend engineering · Digital transformation
+
+---
+
+## Projects on this site
+
+- **Portfolio** — selected work across integration, fintech, and AI
+- **Experience** — timeline of roles from Cuba to Chile
+- **devcast** — open-source tool that turns GitHub commits into LinkedIn/Instagram posts ([devcast.lilicurl.com](https://devcast.lilicurl.com))
+
+---
+
+## Stack
+
+- **Framework:** Next.js 15 (App Router, Turbopack)
+- **UI:** React 19, Tailwind CSS 4, shadcn/ui, Radix UI
+- **Language:** TypeScript (strict)
+- **Deploy:** Vercel
+
+---
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev        # http://localhost:3000
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Email: lccastellanosm@gmail.com
+- LinkedIn: [linkedin.com/in/lilicurl](https://linkedin.com/in/lilicurl)
+- Site: [lilicurl.com](https://lilicurl.com)
