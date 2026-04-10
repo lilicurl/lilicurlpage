@@ -1,8 +1,9 @@
-import Link from 'next/link'
-import { Github, ArrowRight, GitCommit, Cpu, MessageSquare, Eye, Zap, Shield, CheckCircle, Code2 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import Link from 'next/link';
+import Image from 'next/image';
+import { Github, ArrowRight, GitCommit, Cpu, MessageSquare, Eye, Zap, Shield, CheckCircle, Code2 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
-const GITHUB_URL = 'https://github.com/vialabs-net/social-engagement'
+const GITHUB_URL = 'https://github.com/vialabs-net/social-engagement';
 
 const HOW_IT_WORKS = [
   {
@@ -26,7 +27,7 @@ const HOW_IT_WORKS = [
     description:
       'One Claude API call per commit. The post lands in Buffer as a draft. You review, edit if needed, and publish.',
   },
-]
+];
 
 const MODULES = [
   'Complexity',
@@ -53,7 +54,7 @@ const MODULES = [
   'Integration',
   'Dependency Health',
   'JS Advanced',
-]
+];
 
 const FEATURES = [
   {
@@ -80,7 +81,7 @@ const FEATURES = [
     description:
       'Write custom analysis modules in TypeScript using the devcast-sdk. Publish to npm as devcast-module-*, list in config.',
   },
-]
+];
 
 export default function DevcastPage() {
   return (
@@ -89,16 +90,31 @@ export default function DevcastPage() {
       {/* Nav */}
       <nav className="border-b border-zinc-800 px-6 py-4">
         <div className="mx-auto flex max-w-5xl items-center justify-between">
-          <span className="font-semibold tracking-tight text-white">devcast</span>
-          <Link
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white transition-colors"
-          >
-            <Github className="h-4 w-4" />
-            GitHub
-          </Link>
+          <Image
+            src="/devcast-logo.svg"
+            alt="devcast"
+            width={120}
+            height={120}
+            className="h-8 w-auto"
+            priority
+          />
+          <div className="flex items-center gap-6">
+            <Link
+              href="/devcast/support"
+              className="text-sm text-zinc-400 hover:text-white transition-colors"
+            >
+              Support
+            </Link>
+            <Link
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white transition-colors"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </Link>
+          </div>
         </div>
       </nav>
 
@@ -111,14 +127,19 @@ export default function DevcastPage() {
           </div>
 
           <h1 className="mb-6 text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
-            Your commits.{' '}
-            <span className="gradient-text">In the feed.</span>
+            Most developers build things{' '}
+            <span className="gradient-text">the world never sees.</span>
           </h1>
 
-          <p className="mb-10 text-lg leading-relaxed text-zinc-400">
-            devcast monitors every GitHub repository you own, analyzes each commit with 24
-            specialized modules, and generates LinkedIn + Instagram posts in your voice —
-            automatically.
+          <p className="mb-6 text-lg leading-relaxed text-zinc-400">
+            Not because the work isn&apos;t worth seeing — but because explaining it takes time
+            and energy that most developers don&apos;t have after shipping.
+          </p>
+
+          <p className="mb-10 text-lg leading-relaxed text-zinc-300">
+            devcast fixes that. Every time you push code, it reads the commit, understands
+            what&apos;s interesting about it, and writes a post in your voice — automatically.
+            No templates. No generic summaries. Real posts, in real voices, about real engineering work.
           </p>
 
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
@@ -140,6 +161,17 @@ export default function DevcastPage() {
               </Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Quote */}
+      <section className="border-t border-zinc-800 px-6 py-16">
+        <div className="mx-auto max-w-2xl text-center">
+          <blockquote className="text-xl font-medium leading-relaxed text-zinc-300 italic">
+            &ldquo;I truly believe great engineering work deserves to be seen.
+            devcast makes sure it is.&rdquo;
+          </blockquote>
+          <p className="mt-4 text-sm text-zinc-500">— Liliana Castellanos, creator of devcast</p>
         </div>
       </section>
 
@@ -244,6 +276,10 @@ export default function DevcastPage() {
             <Link href="https://lilicurl.com" className="text-zinc-400 hover:text-white transition-colors">
               Liliana Castellanos
             </Link>
+            {' · '}
+            <Link href="/devcast/support" className="text-zinc-400 hover:text-white transition-colors">
+              Support
+            </Link>
           </span>
           <Link
             href={GITHUB_URL}
@@ -258,5 +294,5 @@ export default function DevcastPage() {
       </footer>
 
     </div>
-  )
+  );
 }
